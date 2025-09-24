@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "cooking-orange": "hsl(var(--cooking-orange))",
+        "cooking-red": "hsl(var(--cooking-red))",
+        "cooking-cream": "hsl(var(--cooking-cream))",
+        "cooking-brown": "hsl(var(--cooking-brown))",
+        "cooking-green": "hsl(var(--cooking-green))",
       },
       borderRadius: {
         lg: "var(--radius)",
