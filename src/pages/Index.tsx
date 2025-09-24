@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import RecipeSection from "@/components/RecipeSection";
-import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
 
 // Import recipe images
 import pastaImage from "@/assets/pasta-marinara.jpg";
@@ -106,8 +106,8 @@ const Index = () => {
         </section>
       </main>
 
-      {/* About section */}
-      <AboutSection />
+      {/* Contact section */}
+      <ContactSection />
       
       <footer className="bg-muted py-8 mt-16">
         <div className="container mx-auto px-4 text-center">
