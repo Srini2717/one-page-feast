@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import RecipeSection from "@/components/RecipeSection";
+import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 
 // Import recipe images
@@ -106,6 +107,9 @@ const Index = () => {
         </section>
       </main>
 
+      {/* About section */}
+      <AboutSection />
+      
       {/* Contact section */}
       <ContactSection />
       

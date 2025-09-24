@@ -2,31 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const ContactSection = () => {
-  const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Visit Us",
-      description: "123 Culinary Street, Food District, Kitchen City, KC 12345"
-    },
-    {
-      icon: Phone,
-      title: "Call Us",
-      description: "+1 (555) 123-COOK (2665)"
-    },
-    {
-      icon: Mail,
-      title: "Email Us",
-      description: "hello@cookingcommunity.com"
-    },
-    {
-      icon: Clock,
-      title: "Office Hours",
-      description: "Monday - Friday: 9AM - 6PM PST"
-    }
-  ];
 
   return (
     <section id="contact" className="py-16 bg-accent/30">
@@ -39,48 +16,8 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Get In Touch</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-              {contactInfo.map((info, index) => (
-                <Card key={index} className="bg-card border-border">
-                  <CardContent className="p-4">
-                    <div className="flex items-start space-x-3">
-                      <div className="inline-flex items-center justify-center w-10 h-10 bg-primary/10 rounded-full flex-shrink-0">
-                        <info.icon className="h-5 w-5 text-primary" />
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-card-foreground mb-1">{info.title}</h4>
-                        <p className="text-sm text-muted-foreground">{info.description}</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-            
-            <div className="bg-gradient-to-r from-primary to-cooking-orange text-white rounded-lg p-6">
-              <h4 className="text-xl font-semibold mb-3">Join Our Newsletter</h4>
-              <p className="mb-4 opacity-90">
-                Get weekly recipes, cooking tips, and exclusive content delivered to your inbox.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Input 
-                  placeholder="Your email address" 
-                  className="bg-white/20 border-white/30 text-white placeholder:text-white/70"
-                />
-                <Button variant="secondary" className="whitespace-nowrap">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
-          </div>
-          
-          {/* Contact Form */}
-          <div>
-            <h3 className="text-2xl font-semibold text-foreground mb-6">Send Us a Message</h3>
+        <div className="max-w-2xl mx-auto">
+          <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">Send Us a Message</h3>
             <Card className="bg-card border-border">
               <CardContent className="p-6">
                 <form className="space-y-4">
@@ -129,7 +66,6 @@ const ContactSection = () => {
                 </form>
               </CardContent>
             </Card>
-          </div>
         </div>
       </div>
     </section>

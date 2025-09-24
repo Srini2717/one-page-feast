@@ -30,6 +30,9 @@ const Header = () => {
           <a href="#recipes" className="text-muted-foreground hover:text-primary font-medium pb-2">
             Recipe
           </a>
+          <a href="#about" className="text-muted-foreground hover:text-primary font-medium pb-2">
+            About Us
+          </a>
           <a href="#contact" className="text-muted-foreground hover:text-primary font-medium pb-2">
             Contact Us
           </a>
